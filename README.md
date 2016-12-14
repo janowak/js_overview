@@ -169,6 +169,8 @@ When a function is invoked, an activation record, otherwise known as an executio
 
 ### prototypes
 
+https://msdn.microsoft.com/en-us/magazine/ff852808.aspx
+
 ### ``` new ``` keyword
 
 ``` var a = new String("abc"); ```
@@ -180,7 +182,19 @@ When a function is invoked, an activation record, otherwise known as an executio
 
 ### for loops in js :)
 
+``` for (i = 0; i<10;i++) { console.log(i); }  ```
+
+``` for (prop in obj) { console.log(obj); } ```
+
+``` for (element of iterable) { console.log(element); } ```
+
+``` Object.keys(obj).forEach(element => { console.log(element); } ```
+
 ### program flow 
+
+** Event loop **
+
+**Question:** How does node knows when to end your program?
 
 ### web workers
 
@@ -201,7 +215,20 @@ console.log( i ); // ReferenceError
 
 ### Transpiling and pollyfyling
 
+Build tools:
+* gulp
+* webpack
 
+Transpilers: 
+* babel
+
+
+### Materials:
+
+http://superherojs.com/
+https://developer.mozilla.org/pl/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+https://github.com/getify/You-Dont-Know-JS
+https://leanpub.com/javascriptallongesix/read
 
 
 
