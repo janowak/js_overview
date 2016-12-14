@@ -17,8 +17,6 @@
 
 The following built-in types are available:
 
-**Question 2:** What is the result of ```typeof null```
-
 * ``` string ```
 * ``` number ```
 
@@ -55,6 +53,8 @@ The following built-in types are available:
   * boxed types for primites (string, number, boolean)
   
 * ```symbol``` (new to ES6)
+
+**Question 2:** What is the result of ```typeof null```
 
 ### Passing data between function
 
@@ -163,8 +163,6 @@ There was no conpect of modules to begin with. Community asnwered this problem w
 
 ### this keyword
 
-``` this ``` mechanism provides a more elegant way of implicitly "passing along" an object reference, leading to cleaner API design and easier re-use. It is runtime binding (manner in which the function is called definies this)
-
 When a function is invoked, an activation record, otherwise known as an execution context, is created. This record contains information about where the function was called from (the call-stack), how the function was invoked, what parameters were passed, etc. One of the properties of this record is the this reference which will be used for the duration of that function's execution.
 
 [This resolution](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md)
@@ -173,7 +171,7 @@ When a function is invoked, an activation record, otherwise known as an executio
 
 ### ``` new ``` keyword
 
-``` var a = new String("abc");
+``` var a = new String("abc"); ```
 
 1. a brand new object is created (aka, constructed) out of thin air
 2. the newly constructed object is [[Prototype]]-linked
