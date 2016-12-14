@@ -226,8 +226,11 @@ Transpilers:
 ### Materials:
 
 http://superherojs.com/
+
 https://developer.mozilla.org/pl/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+
 https://github.com/getify/You-Dont-Know-JS
+
 https://leanpub.com/javascriptallongesix/read
 
 
