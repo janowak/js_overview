@@ -19,13 +19,13 @@ The following built-in types are available:
 
 **Question 2:** What is the result of ```typeof null```
 
-* ```string```
-* ```number```
+* ``` string ```
+* ``` number ```
 
-  Only floats ! ```0.1 + 0.2``` is problematic
+  Only floats ! ``` 0.1 + 0.2 ``` is problematic
 
-* ```boolean```
-* ```null``` and ```undefined```
+* ``` boolean ```
+* ``` null ``` and ``` undefined ```
   
   undefined vs null vs Reference Error
  
@@ -88,6 +88,21 @@ Any value not on this list is true
 * **lexical scope**
 * dynamic scope 
 
+```
+function foo() {
+    console.log( a );
+}
+
+function bar() {
+    var a = 3;
+    foo();
+}
+
+var a = 2;
+
+bar();
+```
+
 **Question:** What is a differenece between dynamic and lexical scope
 
 ### Hoisting
@@ -127,7 +142,7 @@ function () {
 }
 ```
 
-Closures introduce a way to create private variables in javascript
+Closures introduce a way to create private variables in javascript and other concepts related to functional programming (curring, partial application)
 
 ### Modules
 
@@ -144,12 +159,28 @@ There was no conpect of modules to begin with. Community asnwered this problem w
 
 * AMD
 * CommonJS
-
-in ECMA6 module definition and ```import``` and ```export``` statement was introduced
+* ECMA6 module definition and ```import``` and ```export``` statement was introduced
 
 ### this keyword
 
+``` this ``` mechanism provides a more elegant way of implicitly "passing along" an object reference, leading to cleaner API design and easier re-use. It is runtime binding (manner in which the function is called definies this)
+
+When a function is invoked, an activation record, otherwise known as an execution context, is created. This record contains information about where the function was called from (the call-stack), how the function was invoked, what parameters were passed, etc. One of the properties of this record is the this reference which will be used for the duration of that function's execution.
+
+[This resolution](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md)
+
 ### prototypes
+
+### ``` new ``` keyword
+
+``` var a = new String("abc");
+
+1. a brand new object is created (aka, constructed) out of thin air
+2. the newly constructed object is [[Prototype]]-linked
+3. the newly constructed object is set as the this binding for that function call
+4. unless the function returns its own alternate object, the new-invoked function call will automatically return the newly constructed object.
+
+### for loops in js :)
 
 ### program flow 
 
