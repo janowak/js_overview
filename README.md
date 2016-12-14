@@ -212,6 +212,7 @@ console.log( i ); // ReferenceError
 * arrow functions
 * Promises
 * generators
+* template strings
 
 ### Transpiling and pollyfyling
 
@@ -221,7 +222,6 @@ Build tools:
 
 Transpilers: 
 * babel
-
 
 ### Materials:
 
