@@ -208,10 +208,21 @@ https://msdn.microsoft.com/en-us/magazine/ff852808.aspx
 
 console.log( i ); // ReferenceError
   ```
-
+  
+  ```
+  var funcs = [];
+  for (let i = 0; i < 5; i++) {
+    funcs.push( function(){
+        console.log( i );
+    } );
+  }
+  funcs[3]();
+  ```
 * arrow functions
-* Promises
+* promises
 * generators
+* classes
+* spread/rest operator, destructuring, default paramater value
 * template strings
 
 ### Transpiling and pollyfyling
@@ -222,6 +233,13 @@ Build tools:
 
 Transpilers: 
 * babel
+
+### Why JS
+
+Used everywhere:
+* WEB
+* BACKEND (node.js)
+* DESKTOP (electron - e.g. Spotify client)
 
 ### Materials:
 
