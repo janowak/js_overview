@@ -29,7 +29,7 @@ The following built-in types are available:
  
 * ```object``` - dictionary for Java Developer but
   
-  All keys are automatically converted to string. Support so called prototypical inheritance
+  All keys are automatically converted to string. Supports prototypical inheritance
 
   * ```Function``` 
   
@@ -69,7 +69,7 @@ Complex types are always different (as references are different) - this also wor
 ### Truthy & Falsy
 
 Everything in js is an expression so it needs to return something.
-If used in if statements values are coersed to true/false concept e.g.
+If used in if statements values are coersed to true/false e.g.
 
 * "" (empty string)
 * 0, -0, NaN (invalid number)
@@ -126,7 +126,7 @@ IAmInGlobalScope = 2;
 
 ### Nested scopes
 
-Conpept of so called environment - each function definition creates new environment that has access to variables definied in this environment plus parent environments. 
+Concept of 'environment' - each function definition creates new environment that has access to variables definied in this environment plus parent environments. 
 
 ### Closures
 
@@ -142,11 +142,11 @@ function () {
 }
 ```
 
-Closures introduce a way to create private variables in javascript and other concepts related to functional programming (curring, partial application)
+Closures introduce a way to create private variables in javascript and concepts related to functional programming (curring, partial application).
 
 ### Modules
 
-There was no conpect of modules to begin with. Community asnwered this problem with:
+There was no modules in JS to begin with. Community asnwered this problem with:
 * IIFEs
   ```
   (function IIFE(){
@@ -175,10 +175,10 @@ https://msdn.microsoft.com/en-us/magazine/ff852808.aspx
 
 ``` var a = new String("abc"); ```
 
-1. a brand new object is created (aka, constructed) out of thin air
-2. the newly constructed object is [[Prototype]]-linked
-3. the newly constructed object is set as the this binding for that function call
-4. unless the function returns its own alternate object, the new-invoked function call will automatically return the newly constructed object.
+1. A brand new object is created (aka, constructed) out of thin air
+2. The newly constructed object is [[Prototype]]-linked
+3. The newly constructed object is set as the this binding for that function call
+4. Unless the function returns its own alternate object, the new-invoked function call will automatically return the newly constructed object.
 
 ### for loops in js :)
 
